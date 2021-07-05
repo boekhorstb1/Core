@@ -37,7 +37,7 @@ class State
      */
     public function __construct(array $conf = null)
     {
-        $this->conf = $conf ?? $GLOBALS['conf'];
+        $this->conf = $conf ?? $GLOBALS['conf'] ?? null;
         // If we still have no array, give up.
         if (empty($this->conf)) {
             throw new \Horde_Exception(

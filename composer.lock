@@ -1,0 +1,5371 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c1c0d28db1d94b488dc240192eef321c",
+    "packages": [
+        {
+            "name": "horde/alarm",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Alarm.git",
+                "reference": "6d73069ffb1ff2f36e872267de2a6032456cb0ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Alarm/zipball/6d73069ffb1ff2f36e872267de2a6032456cb0ff",
+                "reference": "6d73069ffb1ff2f36e872267de2a6032456cb0ff",
+                "shasum": ""
+            },
+            "require": {
+                "horde/date": "^3",
+                "horde/exception": "^3",
+                "horde/translation": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/db": "^3",
+                "horde/log": "^3",
+                "horde/mail": "^3",
+                "horde/mime": "^3",
+                "horde/notification": "^3",
+                "horde/perms": "^3",
+                "horde/prefs": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Alarm": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Alarm library",
+            "homepage": "https://www.horde.org/libraries/Horde_Alarm",
+            "support": {
+                "source": "https://github.com/maintaina-com/Alarm/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/auth",
+            "version": "v3.0.0alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Auth.git",
+                "reference": "c19ecae768434fcd6d430adf6608ddb30b71fd49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Auth/zipball/c19ecae768434fcd6d430adf6608ddb30b71fd49",
+                "reference": "c19ecae768434fcd6d430adf6608ddb30b71fd49",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "horde/exception": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-ctype": "*",
+                "ext-ftp": "*",
+                "ext-pam": "*",
+                "ext-sasl": "*",
+                "horde/db": "^3",
+                "horde/history": "^3",
+                "horde/http": "^3",
+                "horde/imap_client": "^3",
+                "horde/imsp": "^3",
+                "horde/kolab_session": "^3",
+                "horde/ldap": "^3",
+                "horde/lock": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Auth": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Authentication and user management library",
+            "homepage": "https://www.horde.org/libraries/Horde_Auth",
+            "support": {
+                "source": "https://github.com/maintaina-com/Auth/tree/v3.0.0alpha5"
+            },
+            "time": "2021-07-04T00:00:00+00:00"
+        },
+        {
+            "name": "horde/autoloader",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Autoloader.git",
+                "reference": "c1ff99f8fa556c6fda284a77e4ef49c2374a35bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Autoloader/zipball/c1ff99f8fa556c6fda284a77e4ef49c2374a35bc",
+                "reference": "c1ff99f8fa556c6fda284a77e4ef49c2374a35bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Autoloader": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Autoloader library",
+            "homepage": "https://www.horde.org/libraries/Horde_Autoloader",
+            "support": {
+                "source": "https://github.com/maintaina-com/Autoloader/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/browser",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Browser.git",
+                "reference": "f8a5325fd4b89a5e8b99365d18977f7e729d0db3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Browser/zipball/f8a5325fd4b89a5e8b99365d18977f7e729d0db3",
+                "reference": "f8a5325fd4b89a5e8b99365d18977f7e729d0db3",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Browser": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Browser detection library",
+            "homepage": "https://www.horde.org/libraries/Horde_Browser",
+            "support": {
+                "source": "https://github.com/maintaina-com/Browser/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/cache",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Cache.git",
+                "reference": "203f8fefb1aca3c48dfc5ef8733ad385636c1828"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Cache/zipball/203f8fefb1aca3c48dfc5ef8733ad385636c1828",
+                "reference": "203f8fefb1aca3c48dfc5ef8733ad385636c1828",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "horde/compress_fast": "^2",
+                "horde/exception": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-apc": "*",
+                "ext-eaccelerator": "0.9.5",
+                "ext-xcache": "*",
+                "horde/,emcache": "^3",
+                "horde/db": "^3",
+                "horde/hashtable": "^2",
+                "horde/log": "^3",
+                "horde/mongo": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Cache": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Caching library",
+            "homepage": "https://www.horde.org/libraries/Horde_Cache",
+            "support": {
+                "source": "https://github.com/maintaina-com/Cache/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/cli",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Cli.git",
+                "reference": "70c70ef61ad563881b2c2822eb10ccdecddc0c98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Cli/zipball/70c70ef61ad563881b2c2822eb10ccdecddc0c98",
+                "reference": "70c70ef61ad563881b2c2822eb10ccdecddc0c98",
+                "shasum": ""
+            },
+            "require": {
+                "horde/support": "^3",
+                "horde/translation": "^3",
+                "php": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Cli": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Command line interface library",
+            "homepage": "https://www.horde.org/libraries/Horde_Cli",
+            "support": {
+                "source": "https://github.com/maintaina-com/Cli/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/compress",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Compress.git",
+                "reference": "5855ef0a6bd2115234179dd09b5e72f81fd67e73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Compress/zipball/5855ef0a6bd2115234179dd09b5e72f81fd67e73",
+                "reference": "5855ef0a6bd2115234179dd09b5e72f81fd67e73",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/mime": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-zlib": "*",
+                "horde/icalendar": "^3",
+                "horde/mail": "^3",
+                "horde/mapi": "^2",
+                "horde/stream_filter": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Compress": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael J Rubinsky",
+                    "email": "mrubinsk@horde.org",
+                    "role": "developer"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Compression library",
+            "homepage": "https://www.horde.org/libraries/Horde_Compress",
+            "support": {
+                "source": "https://github.com/maintaina-com/Compress/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/compress_fast",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Compress_Fast.git",
+                "reference": "090536b11f844c42544548f6c82c41b9af6528f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Compress_Fast/zipball/090536b11f844c42544548f6c82c41b9af6528f2",
+                "reference": "090536b11f844c42544548f6c82c41b9af6528f2",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-horde_lz4": "*",
+                "ext-lzf": "*",
+                "ext-zlib": "*",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Compress_Fast": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Fast compression library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/Compress_Fast/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/constraint",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Constraint.git",
+                "reference": "ca9b686c739ee08242e43c599a10c729c2a21830"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Constraint/zipball/ca9b686c739ee08242e43c599a10c729c2a21830",
+                "reference": "ca9b686c739ee08242e43c599a10c729c2a21830",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Constraint": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Constraint library",
+            "homepage": "https://www.horde.org/libraries/Horde_Constraint",
+            "support": {
+                "source": "https://github.com/maintaina-com/Constraint/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/controller",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Controller.git",
+                "reference": "9bd392ee85df94547ed74427cbab26777be6b75e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Controller/zipball/9bd392ee85df94547ed74427cbab26777be6b75e",
+                "reference": "9bd392ee85df94547ed74427cbab26777be6b75e",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/injector": "^3",
+                "horde/log": "^3",
+                "horde/support": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Controller": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Naberezny",
+                    "email": "mike@naberezny.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Controller library",
+            "homepage": "https://www.horde.org/libraries/Horde_Controller",
+            "support": {
+                "source": "https://github.com/maintaina-com/Controller/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/crypt_blowfish",
+            "version": "v2.0.0alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Crypt_Blowfish.git",
+                "reference": "501a2af5520e4aa64dc7b4a1563aa5193a3c33df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Crypt_Blowfish/zipball/501a2af5520e4aa64dc7b4a1563aa5193a3c33df",
+                "reference": "501a2af5520e4aa64dc7b4a1563aa5193a3c33df",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/support": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-mcrypt": "*",
+                "ext-openssl": "*",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Crypt_Blowfish": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Blowfish encryption library",
+            "homepage": "https://www.horde.org/libraries/Horde_Crypt_Blowfish",
+            "support": {
+                "source": "https://github.com/maintaina-com/Crypt_Blowfish/tree/v2.0.0alpha2"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/css_parser",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Css_Parser.git",
+                "reference": "221edcf5ddf74a0d6788fc9a8a21f64edb6fb634"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Css_Parser/zipball/221edcf5ddf74a0d6788fc9a8a21f64edb6fb634",
+                "reference": "221edcf5ddf74a0d6788fc9a8a21f64edb6fb634",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-mbstring": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Css_Parser": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "CSS parser library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/Css_Parser/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/cssminify",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/CssMinify.git",
+                "reference": "a40cf82f207b83e84570018153c060980fb71458"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/CssMinify/zipball/a40cf82f207b83e84570018153c060980fb71458",
+                "reference": "a40cf82f207b83e84570018153c060980fb71458",
+                "shasum": ""
+            },
+            "require": {
+                "horde/css_parser": "^2",
+                "horde/exception": "^3",
+                "horde/log": "^3",
+                "horde/url": "^3",
+                "php": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_CssMinify": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "CSS minification library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/CssMinify/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/data",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Data.git",
+                "reference": "98a341b46f3981f971cd389545446f90b33c82ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Data/zipball/98a341b46f3981f971cd389545446f90b33c82ff",
+                "reference": "98a341b46f3981f971cd389545446f90b33c82ff",
+                "shasum": ""
+            },
+            "require": {
+                "horde/browser": "^3",
+                "horde/exception": "^3",
+                "horde/icalendar": "^3",
+                "horde/mail": "^3",
+                "horde/mime": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Data": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Data import and export library",
+            "homepage": "https://www.horde.org/libraries/Horde_Data",
+            "support": {
+                "source": "https://github.com/maintaina-com/Data/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/date",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Date.git",
+                "reference": "2873fa3af839cd8b1729141eba1fb701def559dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Date/zipball/2873fa3af839cd8b1729141eba1fb701def559dc",
+                "reference": "2873fa3af839cd8b1729141eba1fb701def559dc",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/nls": "^3",
+                "horde/translation": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-calendar": "*",
+                "horde/icalendar": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Date": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Date library",
+            "homepage": "https://www.horde.org/libraries/Horde_Date",
+            "support": {
+                "source": "https://github.com/maintaina-com/Date/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/db",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Db.git",
+                "reference": "5e1c2fb6ab2a35c436a452e49becc144b6b2e7c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Db/zipball/5e1c2fb6ab2a35c436a452e49becc144b6b2e7c6",
+                "reference": "5e1c2fb6ab2a35c436a452e49becc144b6b2e7c6",
+                "shasum": ""
+            },
+            "require": {
+                "horde/date": "^3",
+                "horde/exception": "^3",
+                "horde/support": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-PDO": "*",
+                "ext-mysql": "*",
+                "ext-mysqli": "*",
+                "ext-oci8": "*",
+                "horde/autoloader": "^3",
+                "horde/cache": "^3",
+                "horde/log": "^3",
+                "horde/test": "^3"
+            },
+            "bin": [
+                "bin/horde-db-migrate-component"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Db": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Mike Naberezny",
+                    "email": "mike@naberezny.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Database abstraction library",
+            "homepage": "https://www.horde.org/libraries/Horde_Db",
+            "support": {
+                "source": "https://github.com/maintaina-com/Db/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/exception",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Exception.git",
+                "reference": "d5a2232d232a10c6be4304131e73e36287aa7760"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Exception/zipball/d5a2232d232a10c6be4304131e73e36287aa7760",
+                "reference": "d5a2232d232a10c6be4304131e73e36287aa7760",
+                "shasum": ""
+            },
+            "require": {
+                "horde/translation": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Exception": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Exception handler library",
+            "homepage": "https://www.horde.org/libraries/Horde_Exception",
+            "support": {
+                "source": "https://github.com/maintaina-com/Exception/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/group",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Group.git",
+                "reference": "b4f3188e5a20df62eb20c74b0f3440c5e47cf4e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Group/zipball/b4f3188e5a20df62eb20c74b0f3440c5e47cf4e2",
+                "reference": "b4f3188e5a20df62eb20c74b0f3440c5e47cf4e2",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/support": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/cache": "^3",
+                "horde/db": "^3",
+                "horde/ldap": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Group": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "User groups library",
+            "homepage": "https://www.horde.org/libraries/Horde_Group",
+            "support": {
+                "source": "https://github.com/maintaina-com/Group/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/hashtable",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/HashTable.git",
+                "reference": "b4bb6d86b454ccf4a9c2d46a30d650d4fba9319b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/HashTable/zipball/b4bb6d86b454ccf4a9c2d46a30d650d4fba9319b",
+                "reference": "b4bb6d86b454ccf4a9c2d46a30d650d4fba9319b",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/log": "^3",
+                "horde/memcache": "^3",
+                "horde/vfs": "^3",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_HashTable": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Hash table client library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/HashTable/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/history",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/History.git",
+                "reference": "5c7ff1216cf50176814e9c5f149333136850e3c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/History/zipball/5c7ff1216cf50176814e9c5f149333136850e3c1",
+                "reference": "5c7ff1216cf50176814e9c5f149333136850e3c1",
+                "shasum": ""
+            },
+            "require": {
+                "horde/db": "^3",
+                "horde/exception": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/hashtable": "^2",
+                "horde/mongo": "^2",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_History": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "History tracking library",
+            "homepage": "https://www.horde.org/libraries/Horde_History",
+            "support": {
+                "source": "https://github.com/maintaina-com/History/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/horde-installer-plugin",
+            "version": "dev-FRAMEWORK_6_0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/horde-installer-plugin.git",
+                "reference": "961a60b77c4a750c353fdce47e10281332532c31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/horde-installer-plugin/zipball/961a60b77c4a750c353fdce47e10281332532c31",
+                "reference": "961a60b77c4a750c353fdce47e10281332532c31",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~2.0"
+            },
+            "require-dev": {
+                "composer/composer": "~2.0"
+            },
+            "default-branch": true,
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Horde\\Composer\\HordeInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Horde\\Composer\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "source": "https://github.com/maintaina-com/horde-installer-plugin/tree/FRAMEWORK_6_0"
+            },
+            "time": "2021-07-04T20:12:03+00:00"
+        },
+        {
+            "name": "horde/icalendar",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Icalendar.git",
+                "reference": "b0a13322f4e7a85ce71e5206acbd8e2e0c580ed0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Icalendar/zipball/b0a13322f4e7a85ce71e5206acbd8e2e0c580ed0",
+                "reference": "b0a13322f4e7a85ce71e5206acbd8e2e0c580ed0",
+                "shasum": ""
+            },
+            "require": {
+                "horde/date": "^3",
+                "horde/exception": "^3",
+                "horde/mail": "^3",
+                "horde/support": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Icalendar": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael J Rubinsky",
+                    "email": "mrubinsk@horde.org",
+                    "role": "developer"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "iCalendar and vCard library",
+            "homepage": "https://www.horde.org/libraries/Horde_Icalendar",
+            "support": {
+                "source": "https://github.com/maintaina-com/Icalendar/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/idna",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Idna.git",
+                "reference": "10842cc8e8b80af35eb8eef3cfbdacc2a9ab22f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Idna/zipball/10842cc8e8b80af35eb8eef3cfbdacc2a9ab22f2",
+                "reference": "10842cc8e8b80af35eb8eef3cfbdacc2a9ab22f2",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-intl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Idna": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "IDNA normalization library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/Idna/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/injector",
+            "version": "v3.0.0alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Injector.git",
+                "reference": "c535e66c1076c7297f59b917619ea8a38e9c98a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Injector/zipball/c535e66c1076c7297f59b917619ea8a38e9c98a7",
+                "reference": "c535e66c1076c7297f59b917619ea8a38e9c98a7",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "php": "^7",
+                "psr/container": "^1"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Injector": "lib/"
+                },
+                "psr-4": {
+                    "Horde\\Injector\\": "src/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Dependency injection container library",
+            "homepage": "https://www.horde.org/libraries/Horde_Injector",
+            "support": {
+                "source": "https://github.com/maintaina-com/Injector/tree/v3.0.0alpha4"
+            },
+            "time": "2021-07-04T00:00:00+00:00"
+        },
+        {
+            "name": "horde/javascriptminify",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/JavascriptMinify.git",
+                "reference": "f502ae6cdabc26b26627dfc3b9fcf6cf621ecb08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/JavascriptMinify/zipball/f502ae6cdabc26b26627dfc3b9fcf6cf621ecb08",
+                "reference": "f502ae6cdabc26b26627dfc3b9fcf6cf621ecb08",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/log": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_JavascriptMinify": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "JavaScript minification library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/JavascriptMinify/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/listheaders",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/ListHeaders.git",
+                "reference": "0c40aada632f2f774ad4fac925b65e5c1113c4e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/ListHeaders/zipball/0c40aada632f2f774ad4fac925b65e5c1113c4e8",
+                "reference": "0c40aada632f2f774ad4fac925b65e5c1113c4e8",
+                "shasum": ""
+            },
+            "require": {
+                "horde/mail": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/mime": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_ListHeaders": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "List headers parsing library",
+            "homepage": "https://www.horde.org/libraries/Horde_ListHeaders",
+            "support": {
+                "source": "https://github.com/maintaina-com/ListHeaders/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/lock",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Lock.git",
+                "reference": "c8a5a88d264e890cf771adda4ba5fe88ffde2b0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Lock/zipball/c8a5a88d264e890cf771adda4ba5fe88ffde2b0c",
+                "reference": "c8a5a88d264e890cf771adda4ba5fe88ffde2b0c",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/support": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/db": "^3",
+                "horde/log": "^3",
+                "horde/mongo": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Lock": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Klang",
+                    "email": "ben@alkaloid.net",
+                    "role": "lead"
+                }
+            ],
+            "description": "Resource locking library",
+            "homepage": "https://www.horde.org/libraries/Horde_Lock",
+            "support": {
+                "source": "https://github.com/maintaina-com/Lock/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/log",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Log.git",
+                "reference": "0492037000b173d3fa2c723bad7fb425b58d8788"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Log/zipball/0492037000b173d3fa2c723bad7fb425b58d8788",
+                "reference": "0492037000b173d3fa2c723bad7fb425b58d8788",
+                "shasum": ""
+            },
+            "require": {
+                "horde/constraint": "^3",
+                "horde/exception": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-dom": "*",
+                "horde/cli": "^3",
+                "horde/scribe": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Log": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Naberezny",
+                    "email": "mike@maintainable.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Logging library",
+            "homepage": "https://www.horde.org/libraries/Horde_Log",
+            "support": {
+                "source": "https://github.com/maintaina-com/Log/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/logintasks",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/LoginTasks.git",
+                "reference": "685fd2ba595881b8fa7a145fd10fb5e26030c181"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/LoginTasks/zipball/685fd2ba595881b8fa7a145fd10fb5e26030c181",
+                "reference": "685fd2ba595881b8fa7a145fd10fb5e26030c181",
+                "shasum": ""
+            },
+            "require": {
+                "horde/translation": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/date": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_LoginTasks": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Login tasks library",
+            "homepage": "https://www.horde.org/libraries/Horde_LoginTasks",
+            "support": {
+                "source": "https://github.com/maintaina-com/LoginTasks/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/mail",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Mail.git",
+                "reference": "5ab9b140a75c3f479b35459f3c8052d778f80e73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Mail/zipball/5ab9b140a75c3f479b35459f3c8052d778f80e73",
+                "reference": "5ab9b140a75c3f479b35459f3c8052d778f80e73",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/idna": "^2",
+                "horde/mime": "^3",
+                "horde/stream_filter": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/smtp": "^2",
+                "horde/stream_wrapper": "^3",
+                "horde/test": "^3",
+                "pear/net_dns2": "^1.5",
+                "pear/net_smtp": "^1.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Mail": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Mail library",
+            "homepage": "https://www.horde.org/libraries/Horde_Mail",
+            "support": {
+                "source": "https://github.com/maintaina-com/Mail/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/mime",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Mime.git",
+                "reference": "5104d9396613bb31fe60aa1636fa973c276d2530"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Mime/zipball/5104d9396613bb31fe60aa1636fa973c276d2530",
+                "reference": "5104d9396613bb31fe60aa1636fa973c276d2530",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/listheaders": "^2",
+                "horde/mail": "^3",
+                "horde/stream": "^2",
+                "horde/stream_filter": "^3",
+                "horde/support": "^3",
+                "horde/text_flowed": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-idn": "*",
+                "ext-intl": "*",
+                "horde/nls": "^3",
+                "horde/test": "^3",
+                "horde/text_filter": "^3",
+                "pear/net_dns2": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Mime": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "MIME library",
+            "homepage": "https://www.horde.org/libraries/Horde_Mime",
+            "support": {
+                "source": "https://github.com/maintaina-com/Mime/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/mime_viewer",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Mime_Viewer.git",
+                "reference": "9299c5e77aed087a5c50f4bc18c3ffc0e456b89d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Mime_Viewer/zipball/9299c5e77aed087a5c50f4bc18c3ffc0e456b89d",
+                "reference": "9299c5e77aed087a5c50f4bc18c3ffc0e456b89d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "horde/browser": "^3",
+                "horde/compress": "^3",
+                "horde/exception": "^3",
+                "horde/horde-installer-plugin": "*",
+                "horde/mime": "^3",
+                "horde/text_filter": "^3",
+                "horde/text_flowed": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "pear/net_dns2": "*"
+            },
+            "type": "horde-library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Mime_Viewer": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "MIME viewer library",
+            "homepage": "https://www.horde.org/libraries/Horde_Mime_Viewer",
+            "support": {
+                "source": "https://github.com/maintaina-com/Mime_Viewer/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/nls",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Nls.git",
+                "reference": "f1c05e62ca1f5576b63416a6e83c203f89717cd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Nls/zipball/f1c05e62ca1f5576b63416a6e83c203f89717cd8",
+                "reference": "f1c05e62ca1f5576b63416a6e83c203f89717cd8",
+                "shasum": ""
+            },
+            "require": {
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-geoip": "*",
+                "pear/net_dns2": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Nls": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Native language support library",
+            "homepage": "https://www.horde.org/libraries/Horde_Nls",
+            "support": {
+                "source": "https://github.com/maintaina-com/Nls/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/notification",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Notification.git",
+                "reference": "6dbd3eb4683e4d03f91e3f3e620427db8e6e4ed7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Notification/zipball/6dbd3eb4683e4d03f91e3f3e620427db8e6e4ed7",
+                "reference": "6dbd3eb4683e4d03f91e3f3e620427db8e6e4ed7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gettext": "*",
+                "horde/exception": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/alarm": "^3",
+                "horde/nls": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Notification": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Notification library implementing subject-observer pattern",
+            "homepage": "https://www.horde.org/libraries/Horde_Notification",
+            "support": {
+                "source": "https://github.com/maintaina-com/Notification/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/pack",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Pack.git",
+                "reference": "7e1b78b87a3567777c0a4e4c8743135e5b425ed1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Pack/zipball/7e1b78b87a3567777c0a4e4c8743135e5b425ed1",
+                "reference": "7e1b78b87a3567777c0a4e4c8743135e5b425ed1",
+                "shasum": ""
+            },
+            "require": {
+                "horde/compress_fast": "^2",
+                "horde/exception": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-igbinary": "^1.2",
+                "ext-json": "*",
+                "ext-msgpack": "*",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Pack": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Data packing library",
+            "homepage": "https://www.horde.org",
+            "support": {
+                "source": "https://github.com/maintaina-com/Pack/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/perms",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Perms.git",
+                "reference": "af35b7a703f200798e6acf4131b839ad2a26f35a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Perms/zipball/af35b7a703f200798e6acf4131b839ad2a26f35a",
+                "reference": "af35b7a703f200798e6acf4131b839ad2a26f35a",
+                "shasum": ""
+            },
+            "require": {
+                "horde/db": "^3",
+                "horde/exception": "^3",
+                "horde/group": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3",
+                "horde/tree": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Perms": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Permissions library",
+            "homepage": "https://www.horde.org/libraries/Horde_Perms",
+            "support": {
+                "source": "https://github.com/maintaina-com/Perms/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/prefs",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Prefs.git",
+                "reference": "85a263568e3d22c34de4a7b00fc1fa6eccc78138"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Prefs/zipball/85a263568e3d22c34de4a7b00fc1fa6eccc78138",
+                "reference": "85a263568e3d22c34de4a7b00fc1fa6eccc78138",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "horde/exception": "^3",
+                "horde/mail": "^3",
+                "horde/mime": "^3",
+                "horde/translation": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/autoloader": "^3",
+                "horde/cache": "^3",
+                "horde/db": "^3",
+                "horde/image": "^3",
+                "horde/imsp": "^3",
+                "horde/kolab_storage": "^3",
+                "horde/ldap": "^3",
+                "horde/mongo": "^2",
+                "horde/test": "^3"
+            },
+            "bin": [
+                "bin/horde-prefs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Prefs": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "User preferences library",
+            "homepage": "https://www.horde.org/libraries/Horde_Prefs",
+            "support": {
+                "source": "https://github.com/maintaina-com/Prefs/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/secret",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Secret.git",
+                "reference": "6925c393aec2e8a5399299290e87768be25520e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Secret/zipball/6925c393aec2e8a5399299290e87768be25520e4",
+                "reference": "6925c393aec2e8a5399299290e87768be25520e4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "horde/crypt_blowfish": "^2",
+                "horde/exception": "^3",
+                "horde/support": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Secret": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Secret key encryption library",
+            "homepage": "https://www.horde.org/libraries/Horde_Secret",
+            "support": {
+                "source": "https://github.com/maintaina-com/Secret/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/serialize",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Serialize.git",
+                "reference": "992cf6f84fc661401e1224c24064b0e6e19050d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Serialize/zipball/992cf6f84fc661401e1224c24064b0e6e19050d3",
+                "reference": "992cf6f84fc661401e1224c24064b0e6e19050d3",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-bz2": "*",
+                "ext-json": "*",
+                "ext-lzf": "*",
+                "ext-wddx": "*",
+                "ext-zlib": "*",
+                "horde/imap_client": "^3",
+                "horde/mime": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Serialize": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Data serialization library",
+            "homepage": "https://www.horde.org/libraries/Horde_Serialize",
+            "support": {
+                "source": "https://github.com/maintaina-com/Serialize/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/sessionhandler",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/SessionHandler.git",
+                "reference": "48b06eae903ad0925bacb69105c9df4c7b3ba217"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/SessionHandler/zipball/48b06eae903ad0925bacb69105c9df4c7b3ba217",
+                "reference": "48b06eae903ad0925bacb69105c9df4c7b3ba217",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/support": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/db": "^3",
+                "horde/hashtable": "^2",
+                "horde/log": "^3",
+                "horde/mongo": "^2",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_SessionHandler": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Session handler library",
+            "homepage": "https://www.horde.org/libraries/Horde_SessionHandler",
+            "support": {
+                "source": "https://github.com/maintaina-com/SessionHandler/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/share",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Share.git",
+                "reference": "0975178e1acd42d03a522ae5058e3e60e4779f73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Share/zipball/0975178e1acd42d03a522ae5058e3e60e4779f73",
+                "reference": "0975178e1acd42d03a522ae5058e3e60e4779f73",
+                "shasum": ""
+            },
+            "require": {
+                "horde/db": "^3",
+                "horde/exception": "^3",
+                "horde/group": "^3",
+                "horde/perms": "^3",
+                "horde/support": "^3",
+                "horde/translation": "^3",
+                "horde/url": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/kolab_storage": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Share": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael J Rubinsky",
+                    "email": "mrubinsk@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Resource sharing library",
+            "homepage": "https://www.horde.org/libraries/Horde_Share",
+            "support": {
+                "source": "https://github.com/maintaina-com/Share/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/stream",
+            "version": "v2.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Stream.git",
+                "reference": "bbb0679816fa323a8b0b1e256113d551c32fd749"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Stream/zipball/bbb0679816fa323a8b0b1e256113d551c32fd749",
+                "reference": "bbb0679816fa323a8b0b1e256113d551c32fd749",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/stream_wrapper": "^3",
+                "horde/test": "^3",
+                "horde/util": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Stream": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP streams library",
+            "homepage": "https://www.horde.org/libraries/Horde_Stream",
+            "support": {
+                "source": "https://github.com/maintaina-com/Stream/tree/v2.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/stream_filter",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Stream_Filter.git",
+                "reference": "168437191dccc9beb7f878d0d603eaca34c52f39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Stream_Filter/zipball/168437191dccc9beb7f878d0d603eaca34c52f39",
+                "reference": "168437191dccc9beb7f878d0d603eaca34c52f39",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Stream_Filter": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP stream filters library",
+            "homepage": "https://www.horde.org/libraries/Horde_Stream_Filter",
+            "support": {
+                "source": "https://github.com/maintaina-com/Stream_Filter/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/stream_wrapper",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Stream_Wrapper.git",
+                "reference": "024b006bef37bffab9ae6a5334bf32e7d5dc83ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Stream_Wrapper/zipball/024b006bef37bffab9ae6a5334bf32e7d5dc83ef",
+                "reference": "024b006bef37bffab9ae6a5334bf32e7d5dc83ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Stream_Wrapper": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP stream wrappers library",
+            "homepage": "https://www.horde.org/libraries/Horde_Stream_Wrapper",
+            "support": {
+                "source": "https://github.com/maintaina-com/Stream_Wrapper/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/support",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Support.git",
+                "reference": "56d0319e291826d15286402326508795b92a3180"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Support/zipball/56d0319e291826d15286402326508795b92a3180",
+                "reference": "56d0319e291826d15286402326508795b92a3180",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/stream_wrapper": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Support": "lib/"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Supporting library",
+            "homepage": "https://www.horde.org/libraries/Horde_Support",
+            "support": {
+                "source": "https://github.com/maintaina-com/Support/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/template",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Template.git",
+                "reference": "37223d9d97d6eb658338959bc4355b6d2a089101"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Template/zipball/37223d9d97d6eb658338959bc4355b6d2a089101",
+                "reference": "37223d9d97d6eb658338959bc4355b6d2a089101",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Template": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Template library (deprecated)",
+            "homepage": "https://www.horde.org/libraries/Horde_Template",
+            "support": {
+                "source": "https://github.com/maintaina-com/Template/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/text_filter",
+            "version": "v3.0.0alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Text_Filter.git",
+                "reference": "c56def8f2d4e7af81782d34f661952613e5a7abe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Text_Filter/zipball/c56def8f2d4e7af81782d34f661952613e5a7abe",
+                "reference": "c56def8f2d4e7af81782d34f661952613e5a7abe",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/idna": "^2",
+                "horde/secret": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-tidy": "*",
+                "horde/test": "^3",
+                "horde/text_filter_jsmin": "^2",
+                "horde/text_flowed": "^3",
+                "horde/translation": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Text_Filter": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Text filtering and conversion library",
+            "homepage": "https://www.horde.org/libraries/Horde_Text_Filter",
+            "support": {
+                "source": "https://github.com/maintaina-com/Text_Filter/tree/v3.0.0alpha2"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/text_flowed",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Text_Flowed.git",
+                "reference": "704d6ed2134e4536d9fe7a1e490dd368636e4c3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Text_Flowed/zipball/704d6ed2134e4536d9fe7a1e490dd368636e4c3a",
+                "reference": "704d6ed2134e4536d9fe7a1e490dd368636e4c3a",
+                "shasum": ""
+            },
+            "require": {
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Text_Flowed": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Flowed text library",
+            "homepage": "https://www.horde.org/libraries/Horde_Text_Flowed",
+            "support": {
+                "source": "https://github.com/maintaina-com/Text_Flowed/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/token",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Token.git",
+                "reference": "94ea890faee9dadb09893c322671287be9025a23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Token/zipball/94ea890faee9dadb09893c322671287be9025a23",
+                "reference": "94ea890faee9dadb09893c322671287be9025a23",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "horde/exception": "^3",
+                "horde/translation": "^3",
+                "horde/url": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/db": "^3",
+                "horde/mongo": "^2",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Token": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Gunnar Wrobel",
+                    "email": "p@rdus.de",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Tokens library",
+            "homepage": "https://www.horde.org/libraries/Horde_Token",
+            "support": {
+                "source": "https://github.com/maintaina-com/Token/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/translation",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Translation.git",
+                "reference": "17ba9fc94f45498a0902e9f5031e0f0c870b51a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Translation/zipball/17ba9fc94f45498a0902e9f5031e0f0c870b51a0",
+                "reference": "17ba9fc94f45498a0902e9f5031e0f0c870b51a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-gettext": "*",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Translation": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Translation library",
+            "homepage": "https://www.horde.org/libraries/Horde_Translation",
+            "support": {
+                "source": "https://github.com/maintaina-com/Translation/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/url",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Url.git",
+                "reference": "eca658e159fce458819d4eb02cbfbc24bc460a67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Url/zipball/eca658e159fce458819d4eb02cbfbc24bc460a67",
+                "reference": "eca658e159fce458819d4eb02cbfbc24bc460a67",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Url": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "URL library",
+            "homepage": "https://www.horde.org/libraries/Horde_Url",
+            "support": {
+                "source": "https://github.com/maintaina-com/Url/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/util",
+            "version": "v3.0.0alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Util.git",
+                "reference": "cc48f1bf9718aa25a664dfb5be92aeca8d1b198b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Util/zipball/cc48f1bf9718aa25a664dfb5be92aeca8d1b198b",
+                "reference": "cc48f1bf9718aa25a664dfb5be92aeca8d1b198b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "ext-iconv": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "horde/imap_client": "^3",
+                "horde/test": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Michael Slusarz",
+                    "email": "slusarz@horde.org",
+                    "role": "developer"
+                }
+            ],
+            "description": "Utility library",
+            "homepage": "https://www.horde.org/libraries/Horde_Util",
+            "support": {
+                "source": "https://github.com/maintaina-com/Util/tree/v3.0.0alpha3"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "horde/view",
+            "version": "3.0.0alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/View.git",
+                "reference": "7837c99841a5fadfdce074ac6c51f996f9e52055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/View/zipball/7837c99841a5fadfdce074ac6c51f996f9e52055",
+                "reference": "7837c99841a5fadfdce074ac6c51f996f9e52055",
+                "shasum": ""
+            },
+            "require": {
+                "horde/exception": "^3",
+                "horde/horde-installer-plugin": "*",
+                "horde/support": "^3",
+                "horde/util": "^3",
+                "php": "^7"
+            },
+            "suggest": {
+                "ext-json": "*",
+                "horde/controller": "^3",
+                "horde/routes": "^3",
+                "horde/test": "^3"
+            },
+            "type": "horde-library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_View": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Naberezny",
+                    "email": "mike@maintainable.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "View pattern library",
+            "homepage": "https://www.horde.org/libraries/Horde_View",
+            "support": {
+                "source": "https://github.com/maintaina-com/View/tree/v3.0.0alpha2"
+            },
+            "time": "2021-02-24T00:00:00+00:00"
+        },
+        {
+            "name": "pear/archive_tar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Archive_Tar.git",
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "^1.10.0alpha2",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "ext-bz2": "Bz2 compression support.",
+                "ext-xz": "Lzma2 compression support.",
+                "ext-zlib": "Gzip compression support."
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Archive_Tar": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Blavet",
+                    "email": "vincent@phpconcept.net"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "greg@chiaraquartet.net"
+                },
+                {
+                    "name": "Michiel Rook",
+                    "email": "mrook@php.net"
+                }
+            ],
+            "description": "Tar file management class with compression support (gzip, bzip2, lzma2)",
+            "homepage": "https://github.com/pear/Archive_Tar",
+            "keywords": [
+                "archive",
+                "tar"
+            ],
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Archive_Tar",
+                "source": "https://github.com/pear/Archive_Tar"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-16T10:50:50+00:00"
+        },
+        {
+            "name": "pear/console_getopt",
+            "version": "v1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralflang/Console_Getopt.git",
+                "reference": "a58c5e7337df2dea4d40210f2079bacb971dc5ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralflang/Console_Getopt/zipball/a58c5e7337df2dea4d40210f2079bacb971dc5ca",
+                "reference": "a58c5e7337df2dea4d40210f2079bacb971dc5ca",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<=8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Console": "./"
+                }
+            },
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "email": "andrei@php.net",
+                    "name": "Andrei Zmievski",
+                    "role": "Lead"
+                },
+                {
+                    "email": "stig@php.net",
+                    "name": "Stig Bakken",
+                    "role": "Developer"
+                },
+                {
+                    "email": "cellog@php.net",
+                    "name": "Greg Beaver",
+                    "role": "Helper"
+                }
+            ],
+            "description": "More info available on: http://pear.php.net/package/Console_Getopt",
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
+                "source": "https://github.com/pear/Console_Getopt"
+            },
+            "time": "2021-02-28T22:00:51+00:00"
+        },
+        {
+            "name": "pear/pear",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/pear-core.git",
+                "reference": "27209e6b58b9e867d9d70ed7d2c74ab9628151e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/pear-core/zipball/27209e6b58b9e867d9d70ed7d2c74ab9628151e9",
+                "reference": "27209e6b58b9e867d9d70ed7d2c74ab9628151e9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "ext-xml": "*",
+                "pear/archive_tar": "*",
+                "pear/console_getopt": "*",
+                "pear/structures_graph": "*",
+                "pear/xml_util": "*"
+            },
+            "replace": {
+                "pear/pear-core-minimal": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "pear/pear_frontend_gtk": "For GTK support",
+                "pear/pear_frontend_web": "For Web support"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Pierre-Alain Joye",
+                    "email": "pierre@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Stig Bakken",
+                    "email": "stig@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Tomas V.V.Cox",
+                    "email": "cox@idecnet.com",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Helgi Thormar",
+                    "email": "dufuz@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Tias Guns",
+                    "email": "tias@php.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Tim Jackson",
+                    "email": "timj@php.net",
+                    "role": "Helper"
+                },
+                {
+                    "name": "Bertrand Gugger",
+                    "email": "toggg@php.net",
+                    "role": "Helper"
+                },
+                {
+                    "name": "Martin Jansen",
+                    "email": "mj@php.net",
+                    "role": "Helper"
+                }
+            ],
+            "description": "This is the definitive source of PEAR's core files.",
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR",
+                "source": "https://github.com/pear/PEAR"
+            },
+            "time": "2021-05-26T16:39:30+00:00"
+        },
+        {
+            "name": "pear/structures_graph",
+            "version": "dev-trunk",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Structures_Graph.git",
+                "reference": "676f37e11ff6a8bcf35a995edcb0a6b7b7b5bf5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Structures_Graph/zipball/676f37e11ff6a8bcf35a995edcb0a6b7b7b5bf5f",
+                "reference": "676f37e11ff6a8bcf35a995edcb0a6b7b7b5bf5f",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "^1.10.1",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Structures": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sérgio Carvalho",
+                    "email": "sergiosgc@gmail.com",
+                    "role": "Lead"
+                }
+            ],
+            "description": "More info available on: http://pear.php.net/package/Structures_Graph",
+            "homepage": "http://pear.php.net/package/Structures_Graph",
+            "support": {
+                "source": "https://github.com/pear/Structures_Graph"
+            },
+            "time": "2020-04-20T00:49:40+00:00"
+        },
+        {
+            "name": "pear/xml_util",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/XML_Util.git",
+                "reference": "a1ce44222a4869501b69a894ab33994381734218"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/XML_Util/zipball/a1ce44222a4869501b69a894ab33994381734218",
+                "reference": "a1ce44222a4869501b69a894ab33994381734218",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "^1.10.1",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<=7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "XML_Util": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Burgess",
+                    "email": "ashnazg@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Stephan Schmidt",
+                    "email": "schst@php-tools.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Davey Shafik",
+                    "email": "davey@php.net",
+                    "role": "Helper"
+                }
+            ],
+            "description": "Methods to work with XML documents",
+            "homepage": "http://pear.php.net/package/XML_Util",
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=XML_Util",
+                "source": "https://github.com/pear/XML_Util"
+            },
+            "time": "2020-04-20T00:29:51+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.x"
+            },
+            "time": "2021-03-05T17:36:06+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "doctrine/instantiator",
+            "version": "1.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "6410c4b8352cb64218641457cef64997e6b784fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/6410c4b8352cb64218641457cef64997e6b784fb",
+                "reference": "6410c4b8352cb64218641457cef64997e6b784fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^8.0",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "https://ocramius.github.io/"
+                }
+            ],
+            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
+            "keywords": [
+                "constructor",
+                "instantiate"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/instantiator/issues",
+                "source": "https://github.com/doctrine/instantiator/tree/1.4.x"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-10T19:05:51+00:00"
+        },
+        {
+            "name": "horde/test",
+            "version": "v3.0.0alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maintaina-com/Test.git",
+                "reference": "e9cc15cb482daedf1dfd505712a94b6f45642768"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maintaina-com/Test/zipball/e9cc15cb482daedf1dfd505712a94b6f45642768",
+                "reference": "e9cc15cb482daedf1dfd505712a94b6f45642768",
+                "shasum": ""
+            },
+            "require": {
+                "horde/support": "^3",
+                "horde/util": "^3",
+                "php": "^7",
+                "phpunit/phpunit": "^9"
+            },
+            "suggest": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "horde/cli": "^3",
+                "horde/log": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Horde_Test": "lib/"
+                }
+            },
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "email": "jan@horde.org",
+                    "role": "lead"
+                },
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Unit testing library",
+            "homepage": "https://www.horde.org/libraries/Horde_Test",
+            "support": {
+                "source": "https://github.com/maintaina-com/Test/tree/v3.0.0alpha2"
+            },
+            "time": "2021-03-13T00:00:00+00:00"
+        },
+        {
+            "name": "myclabs/deep-copy",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/DeepCopy.git",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "replace": {
+                "myclabs/deep-copy": "self.version"
+            },
+            "require-dev": {
+                "doctrine/collections": "^1.0",
+                "doctrine/common": "^2.6",
+                "phpunit/phpunit": "^7.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                },
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Create deep copies (clones) of your objects",
+            "keywords": [
+                "clone",
+                "copy",
+                "duplicate",
+                "object",
+                "object graph"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/DeepCopy/issues",
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.2"
+            },
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-13T09:40:50+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v4.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fe14cf3672a149364fb66dfe11bf6549af899f94",
+                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nikic/PHP-Parser/issues",
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.11.0"
+            },
+            "time": "2021-07-03T13:36:55+00:00"
+        },
+        {
+            "name": "phar-io/manifest",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phar-io/manifest.git",
+                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
+                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-phar": "*",
+                "ext-xmlwriter": "*",
+                "phar-io/version": "^3.0.1",
+                "php": "^7.2 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Heuer",
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
+            "support": {
+                "issues": "https://github.com/phar-io/manifest/issues",
+                "source": "https://github.com/phar-io/manifest/tree/2.0.1"
+            },
+            "time": "2020-06-27T14:33:11+00:00"
+        },
+        {
+            "name": "phar-io/version",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phar-io/version.git",
+                "reference": "bae7c545bef187884426f042434e561ab1ddb182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phar-io/version/zipball/bae7c545bef187884426f042434e561ab1ddb182",
+                "reference": "bae7c545bef187884426f042434e561ab1ddb182",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Heuer",
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Library for handling version information and constraints",
+            "support": {
+                "issues": "https://github.com/phar-io/version/issues",
+                "source": "https://github.com/phar-io/version/tree/3.1.0"
+            },
+            "time": "2021-02-23T14:00:09+00:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-common",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+                "reference": "a0eeab580cbdf4414fef6978732510a36ed0a9d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/a0eeab580cbdf4414fef6978732510a36ed0a9d6",
+                "reference": "a0eeab580cbdf4414fef6978732510a36ed0a9d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "opensource@ijaap.nl"
+                }
+            ],
+            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+            "homepage": "http://www.phpdoc.org",
+            "keywords": [
+                "FQSEN",
+                "phpDocumentor",
+                "phpdoc",
+                "reflection",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/master"
+            },
+            "time": "2021-06-25T13:47:51+00:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-docblock",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "8719cc12e2a57ec3432a76989bb4ef773ac75b63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8719cc12e2a57ec3432a76989bb4ef773ac75b63",
+                "reference": "8719cc12e2a57ec3432a76989bb4ef773ac75b63",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.3.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                },
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "account@ijaap.nl"
+                }
+            ],
+            "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+            },
+            "time": "2021-04-23T09:50:58+00:00"
+        },
+        {
+            "name": "phpdocumentor/type-resolver",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "reference": "6759f2268deb9f329812679e9dcb2d0083b2a30b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6759f2268deb9f329812679e9dcb2d0083b2a30b",
+                "reference": "6759f2268deb9f329812679e9dcb2d0083b2a30b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.0"
+            },
+            "require-dev": {
+                "ext-tokenizer": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                }
+            ],
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.x"
+            },
+            "time": "2021-02-02T21:09:27+00:00"
+        },
+        {
+            "name": "phpspec/prophecy",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/prophecy.git",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/instantiator": "^1.2",
+                "php": "^7.2 || ~8.0, <8.1",
+                "phpdocumentor/reflection-docblock": "^5.2",
+                "sebastian/comparator": "^3.0 || ^4.0",
+                "sebastian/recursion-context": "^3.0 || ^4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.11.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                },
+                {
+                    "name": "Marcello Duarte",
+                    "email": "marcello.duarte@gmail.com"
+                }
+            ],
+            "description": "Highly opinionated mocking framework for PHP 5.3+",
+            "homepage": "https://github.com/phpspec/prophecy",
+            "keywords": [
+                "Double",
+                "Dummy",
+                "fake",
+                "mock",
+                "spy",
+                "stub"
+            ],
+            "support": {
+                "issues": "https://github.com/phpspec/prophecy/issues",
+                "source": "https://github.com/phpspec/prophecy/tree/1.13.0"
+            },
+            "time": "2021-03-17T13:42:18+00:00"
+        },
+        {
+            "name": "phpunit/php-code-coverage",
+            "version": "9.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "c542a519dcd0fd583b355717d8110bfa3faa8a9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c542a519dcd0fd583b355717d8110bfa3faa8a9e",
+                "reference": "c542a519dcd0fd583b355717d8110bfa3faa8a9e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-xmlwriter": "*",
+                "nikic/php-parser": "^4.10.2",
+                "php": ">=7.3",
+                "phpunit/php-file-iterator": "^3.0.3",
+                "phpunit/php-text-template": "^2.0.2",
+                "sebastian/code-unit-reverse-lookup": "^2.0.2",
+                "sebastian/complexity": "^2.0",
+                "sebastian/environment": "^5.1.2",
+                "sebastian/lines-of-code": "^1.0.3",
+                "sebastian/version": "^3.0.1",
+                "theseer/tokenizer": "^1.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-pcov": "*",
+                "ext-xdebug": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
+            "homepage": "https://github.com/sebastianbergmann/php-code-coverage",
+            "keywords": [
+                "coverage",
+                "testing",
+                "xunit"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-03T04:58:09+00:00"
+        },
+        {
+            "name": "phpunit/php-file-iterator",
+            "version": "3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
+                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/aa4be8575f26070b100fccb67faabb28f21f66f8",
+                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "FilterIterator implementation that filters files based on a list of suffixes.",
+            "homepage": "https://github.com/sebastianbergmann/php-file-iterator/",
+            "keywords": [
+                "filesystem",
+                "iterator"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T05:57:25+00:00"
+        },
+        {
+            "name": "phpunit/php-invoker",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-invoker.git",
+                "reference": "5a10147d0aaf65b58940a0b72f71c9ac0423cc67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-invoker/zipball/5a10147d0aaf65b58940a0b72f71c9ac0423cc67",
+                "reference": "5a10147d0aaf65b58940a0b72f71c9ac0423cc67",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "ext-pcntl": "*",
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-pcntl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Invoke callables with a timeout",
+            "homepage": "https://github.com/sebastianbergmann/php-invoker/",
+            "keywords": [
+                "process"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-invoker/issues",
+                "source": "https://github.com/sebastianbergmann/php-invoker/tree/3.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T05:58:55+00:00"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "reference": "5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28",
+                "reference": "5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Simple template engine.",
+            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "keywords": [
+                "template"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/2.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T05:33:50+00:00"
+        },
+        {
+            "name": "phpunit/php-timer",
+            "version": "5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-timer.git",
+                "reference": "5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2",
+                "reference": "5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Utility class for timing",
+            "homepage": "https://github.com/sebastianbergmann/php-timer/",
+            "keywords": [
+                "timer"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
+                "source": "https://github.com/sebastianbergmann/php-timer/tree/5.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:16:10+00:00"
+        },
+        {
+            "name": "phpunit/phpunit",
+            "version": "9.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "a1c34bd10a4cc3daf88b9843b2478d5e32142845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a1c34bd10a4cc3daf88b9843b2478d5e32142845",
+                "reference": "a1c34bd10a4cc3daf88b9843b2478d5e32142845",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/instantiator": "^1.3.1",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "myclabs/deep-copy": "^1.10.1",
+                "phar-io/manifest": "^2.0.1",
+                "phar-io/version": "^3.0.2",
+                "php": ">=7.3",
+                "phpspec/prophecy": "^1.12.1",
+                "phpunit/php-code-coverage": "^9.2.3",
+                "phpunit/php-file-iterator": "^3.0.5",
+                "phpunit/php-invoker": "^3.1.1",
+                "phpunit/php-text-template": "^2.0.3",
+                "phpunit/php-timer": "^5.0.2",
+                "sebastian/cli-parser": "^1.0.1",
+                "sebastian/code-unit": "^1.0.6",
+                "sebastian/comparator": "^4.0.5",
+                "sebastian/diff": "^4.0.3",
+                "sebastian/environment": "^5.1.3",
+                "sebastian/exporter": "^4.0.3",
+                "sebastian/global-state": "^5.0.1",
+                "sebastian/object-enumerator": "^4.0.3",
+                "sebastian/resource-operations": "^3.0.3",
+                "sebastian/type": "^2.3.4",
+                "sebastian/version": "^3.0.2"
+            },
+            "require-dev": {
+                "ext-pdo": "*",
+                "phpspec/prophecy-phpunit": "^2.0.1"
+            },
+            "suggest": {
+                "ext-soap": "*",
+                "ext-xdebug": "*"
+            },
+            "bin": [
+                "phpunit"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.5-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "src/Framework/Assert/Functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "The PHP Unit Testing framework.",
+            "homepage": "https://phpunit.de/",
+            "keywords": [
+                "phpunit",
+                "testing",
+                "xunit"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/phpunit/issues",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5"
+            },
+            "funding": [
+                {
+                    "url": "https://phpunit.de/donate.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-03T05:02:23+00:00"
+        },
+        {
+            "name": "sebastian/cli-parser",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/cli-parser.git",
+                "reference": "442e7c7e687e42adc03470c7b668bc4b2402c0b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/442e7c7e687e42adc03470c7b668bc4b2402c0b2",
+                "reference": "442e7c7e687e42adc03470c7b668bc4b2402c0b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for parsing CLI options",
+            "homepage": "https://github.com/sebastianbergmann/cli-parser",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
+                "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T06:08:49+00:00"
+        },
+        {
+            "name": "sebastian/code-unit",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/code-unit.git",
+                "reference": "1fc9f64c0927627ef78ba436c9b17d967e68e120"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/code-unit/zipball/1fc9f64c0927627ef78ba436c9b17d967e68e120",
+                "reference": "1fc9f64c0927627ef78ba436c9b17d967e68e120",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Collection of value objects that represent the PHP code units",
+            "homepage": "https://github.com/sebastianbergmann/code-unit",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/code-unit/issues",
+                "source": "https://github.com/sebastianbergmann/code-unit/tree/1.0.8"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:08:54+00:00"
+        },
+        {
+            "name": "sebastian/code-unit-reverse-lookup",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
+                "reference": "ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5",
+                "reference": "ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Looks up which function or method a line of code belongs to",
+            "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
+                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/2.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T05:30:19+00:00"
+        },
+        {
+            "name": "sebastian/comparator",
+            "version": "4.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/comparator.git",
+                "reference": "55f4261989e546dc112258c7a75935a81a7ce382"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/55f4261989e546dc112258c7a75935a81a7ce382",
+                "reference": "55f4261989e546dc112258c7a75935a81a7ce382",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/diff": "^4.0",
+                "sebastian/exporter": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@2bepublished.at"
+                }
+            ],
+            "description": "Provides the functionality to compare PHP values for equality",
+            "homepage": "https://github.com/sebastianbergmann/comparator",
+            "keywords": [
+                "comparator",
+                "compare",
+                "equality"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/comparator/issues",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/4.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T15:49:45+00:00"
+        },
+        {
+            "name": "sebastian/complexity",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/complexity.git",
+                "reference": "739b35e53379900cc9ac327b2147867b8b6efd88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/739b35e53379900cc9ac327b2147867b8b6efd88",
+                "reference": "739b35e53379900cc9ac327b2147867b8b6efd88",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^4.7",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for calculating the complexity of PHP code units",
+            "homepage": "https://github.com/sebastianbergmann/complexity",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/complexity/issues",
+                "source": "https://github.com/sebastianbergmann/complexity/tree/2.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T15:52:27+00:00"
+        },
+        {
+            "name": "sebastian/diff",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3",
+                "symfony/process": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "https://github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:10:38+00:00"
+        },
+        {
+            "name": "sebastian/environment",
+            "version": "5.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/environment.git",
+                "reference": "388b6ced16caa751030f6a69e588299fa09200ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/388b6ced16caa751030f6a69e588299fa09200ac",
+                "reference": "388b6ced16caa751030f6a69e588299fa09200ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-posix": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Provides functionality to handle HHVM/PHP environments",
+            "homepage": "http://www.github.com/sebastianbergmann/environment",
+            "keywords": [
+                "Xdebug",
+                "environment",
+                "hhvm"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/environment/issues",
+                "source": "https://github.com/sebastianbergmann/environment/tree/5.1.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T05:52:38+00:00"
+        },
+        {
+            "name": "sebastian/exporter",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/exporter.git",
+                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/recursion-context": "^4.0"
+            },
+            "require-dev": {
+                "ext-mbstring": "*",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Provides the functionality to export PHP variables for visualization",
+            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "keywords": [
+                "export",
+                "exporter"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/exporter/issues",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T05:24:23+00:00"
+        },
+        {
+            "name": "sebastian/global-state",
+            "version": "5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/global-state.git",
+                "reference": "23bd5951f7ff26f12d4e3242864df3e08dec4e49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/23bd5951f7ff26f12d4e3242864df3e08dec4e49",
+                "reference": "23bd5951f7ff26f12d4e3242864df3e08dec4e49",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/object-reflector": "^2.0",
+                "sebastian/recursion-context": "^4.0"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-uopz": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Snapshotting of global state",
+            "homepage": "http://www.github.com/sebastianbergmann/global-state",
+            "keywords": [
+                "global state"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/global-state/issues",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-11T13:31:12+00:00"
+        },
+        {
+            "name": "sebastian/lines-of-code",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/lines-of-code.git",
+                "reference": "c1c2e997aa3146983ed888ad08b15470a2e22ecc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/c1c2e997aa3146983ed888ad08b15470a2e22ecc",
+                "reference": "c1c2e997aa3146983ed888ad08b15470a2e22ecc",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^4.6",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for counting the lines of code in PHP source code",
+            "homepage": "https://github.com/sebastianbergmann/lines-of-code",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
+                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-28T06:42:11+00:00"
+        },
+        {
+            "name": "sebastian/object-enumerator",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/object-enumerator.git",
+                "reference": "5c9eeac41b290a3712d88851518825ad78f45c71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/5c9eeac41b290a3712d88851518825ad78f45c71",
+                "reference": "5c9eeac41b290a3712d88851518825ad78f45c71",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/object-reflector": "^2.0",
+                "sebastian/recursion-context": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Traverses array structures and object graphs to enumerate all referenced objects",
+            "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
+                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/4.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:12:34+00:00"
+        },
+        {
+            "name": "sebastian/object-reflector",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/object-reflector.git",
+                "reference": "b4f479ebdbf63ac605d183ece17d8d7fe49c15c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/b4f479ebdbf63ac605d183ece17d8d7fe49c15c7",
+                "reference": "b4f479ebdbf63ac605d183ece17d8d7fe49c15c7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Allows reflection of object attributes, including inherited and non-public ones",
+            "homepage": "https://github.com/sebastianbergmann/object-reflector/",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
+                "source": "https://github.com/sebastianbergmann/object-reflector/tree/2.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:14:26+00:00"
+        },
+        {
+            "name": "sebastian/recursion-context",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/recursion-context.git",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/cd9d8cf3c5804de4341c283ed787f099f5506172",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                }
+            ],
+            "description": "Provides functionality to recursively process PHP variables",
+            "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:17:30+00:00"
+        },
+        {
+            "name": "sebastian/resource-operations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/resource-operations.git",
+                "reference": "0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8",
+                "reference": "0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Provides a list of PHP built-in functions that operate on resources",
+            "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/resource-operations/issues",
+                "source": "https://github.com/sebastianbergmann/resource-operations/tree/3.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T06:45:17+00:00"
+        },
+        {
+            "name": "sebastian/type",
+            "version": "2.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/type.git",
+                "reference": "f24cbc541026c3bb7d27c647f0f9ea337135b22a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/f24cbc541026c3bb7d27c647f0f9ea337135b22a",
+                "reference": "f24cbc541026c3bb7d27c647f0f9ea337135b22a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Collection of value objects that represent the types of the PHP type system",
+            "homepage": "https://github.com/sebastianbergmann/type",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/type/issues",
+                "source": "https://github.com/sebastianbergmann/type/tree/2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-18T06:28:45+00:00"
+        },
+        {
+            "name": "sebastian/version",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/version.git",
+                "reference": "c6c1022351a901512170118436c764e473f6de8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/c6c1022351a901512170118436c764e473f6de8c",
+                "reference": "c6c1022351a901512170118436c764e473f6de8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library that helps with managing the version number of Git-hosted PHP projects",
+            "homepage": "https://github.com/sebastianbergmann/version",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/version/issues",
+                "source": "https://github.com/sebastianbergmann/version/tree/3.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T06:39:44+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-19T12:13:01+00:00"
+        },
+        {
+            "name": "theseer/tokenizer",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/tokenizer.git",
+                "reference": "75a63c33a8577608444246075ea0af0d052e452a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/75a63c33a8577608444246075ea0af0d052e452a",
+                "reference": "75a63c33a8577608444246075ea0af0d052e452a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
+            "support": {
+                "issues": "https://github.com/theseer/tokenizer/issues",
+                "source": "https://github.com/theseer/tokenizer/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/theseer",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-07-12T23:59:07+00:00"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "b419d648592b0b8911cbbe10d450fe314f4fd262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/b419d648592b0b8911cbbe10d450fe314f4fd262",
+                "reference": "b419d648592b0b8911cbbe10d450fe314f4fd262",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<4.6.1 || 4.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.13"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/master"
+            },
+            "time": "2021-06-19T13:45:26+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "horde/horde-installer-plugin": 20,
+        "horde/alarm": 20,
+        "horde/auth": 20,
+        "horde/autoloader": 20,
+        "horde/browser": 20,
+        "horde/cache": 20,
+        "horde/cli": 20,
+        "horde/compress": 20,
+        "horde/compress_fast": 20,
+        "horde/log": 20,
+        "horde/controller": 20,
+        "horde/cssminify": 20,
+        "horde/data": 20,
+        "horde/date": 20,
+        "horde/exception": 20,
+        "horde/group": 20,
+        "horde/hashtable": 20,
+        "horde/history": 20,
+        "horde/injector": 20,
+        "horde/javascriptminify": 20,
+        "horde/lock": 20,
+        "horde/logintasks": 20,
+        "horde/mime": 20,
+        "horde/mime_viewer": 20,
+        "horde/notification": 20,
+        "horde/pack": 20,
+        "horde/perms": 20,
+        "horde/prefs": 20,
+        "horde/secret": 20,
+        "horde/serialize": 20,
+        "horde/sessionhandler": 20,
+        "horde/share": 20,
+        "horde/support": 20,
+        "horde/template": 20,
+        "horde/token": 20,
+        "horde/text_filter": 20,
+        "horde/translation": 20,
+        "horde/url": 20,
+        "horde/util": 20,
+        "horde/view": 20,
+        "horde/test": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7",
+        "ext-session": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

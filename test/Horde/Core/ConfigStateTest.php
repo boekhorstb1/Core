@@ -26,7 +26,9 @@ class ConfigStateTest extends HordeTestCase
 {
     public function testFailsWhenNoGlobalsOrParam()
     {
-        unset($GLOBALS['conf']);
+        if (isset($GLOBALS['conf'])){
+            unset($GLOBALS['conf']);
+        }
         $this->expectException(\Horde_Exception::class);
         $state = new State;
         $this->assertEquals([], $state->toArray());
@@ -34,7 +36,9 @@ class ConfigStateTest extends HordeTestCase
 
     public function testPassedEqualsDump()
     {
-        unset($GLOBALS['conf']);
+        if (isset($GLOBALS['conf'])){
+            unset($GLOBALS['conf']);
+        }
         $param = ['foo' => 'bar'];
         $state = new State($param);
         $this->assertEquals($param, $state->toArray());
