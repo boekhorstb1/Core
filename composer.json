@@ -94,5 +94,8 @@
         "psr-4": {
             "Horde\\Core\\": "src/"
         }
+    },
+    "require-dev": {
+        "horde/test": "dev-FRAMEWORK_6_0 || ^3"
     }
 }
