@@ -1,8 +1,30 @@
+-------------
+v3.0.0alpha10
+-------------
+
+
+
+
+------------
+v3.0.0alpha9
+------------
+
+[rla] Add support for namespaced Application, Api, Ajax\Application and Blocks.
+|+
+
+
+------------
+v3.0.0alpha8
+------------
+
+|+
+
 ------------
 v3.0.0alpha7
 ------------
 
-
+[rla] Added PSR-3 Logger Factory to the default set.
+|+
 
 
 ------------

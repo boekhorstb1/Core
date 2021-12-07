@@ -431,6 +431,7 @@ class Horde_Registry implements Horde_Shutdown_Task
             'Horde_Memcache' => 'Horde_Core_Factory_Memcache',
             'Horde_Nosql_Adapter' => 'Horde_Core_Factory_NosqlBase',
             'Horde_Notification' => 'Horde_Core_Factory_Notification',
+            'Horde_Notification_Handler' => 'Horde_Core_Factory_Notification',
             'Horde_Perms' => 'Horde_Core_Factory_Perms',
             'Horde_Queue_Storage' => 'Horde_Core_Factory_QueueStorage',
             'Horde_Routes_Mapper' => 'Horde_Core_Factory_Mapper',
@@ -450,7 +451,8 @@ class Horde_Registry implements Horde_Shutdown_Task
             'Horde_Weather' => 'Horde_Core_Factory_Weather',
             'Net_DNS2_Resolver' => 'Horde_Core_Factory_Dns',
             'Text_LanguageDetect' => 'Horde_Core_Factory_LanguageDetect',
-            Horde\Core\Middleware\AuthHttpBasic::class => Horde\Core\Factory\AuthHttpBasicFactory::class
+            Horde\Core\Middleware\AuthHttpBasic::class => Horde\Core\Factory\AuthHttpBasicFactory::class,
+            Horde\Log\Logger::class => Horde\Core\Factory\LoggerFactory::class
         );
 
         /* Define implementations. */
@@ -831,6 +833,16 @@ class Horde_Registry implements Horde_Shutdown_Task
         }
 
         $cname = Horde_String::ucfirst($type);
+        // PSR-4 case: Autoloading should already be handled by composer
+        $classnamePsr4 = 'Horde\\' .  Horde_String::ucfirst($app) . '\\' . $cname;
+        if (class_exists($classnamePsr4)) {
+            $this->_cache['ob'][$app][$type] = ($type == 'application')
+            ? new $classnamePsr4($app)
+            : new $classnamePsr4();
+
+            return $this->_cache['ob'][$app][$type];
+        }
+        // Continue with unnamespaced version
 
         /* Can't autoload here, since the application may not have been
          * initialized yet. */
@@ -860,7 +872,7 @@ class Horde_Registry implements Horde_Shutdown_Task
      *                        returned. Defaults to non-hidden.
      * @param boolean $assoc  Return hash with app names as keys and config
      *                        parameters as values?
-     * @param integer $perms  The permission level to check for in the list.
+     * @param int|null $perms  The permission level to check for in the list.
      *                        If null, skips permission check.
      *
      * @return array  List of apps registered with Horde. If no
@@ -1994,6 +2006,9 @@ class Horde_Registry implements Horde_Shutdown_Task
     /**
      * Returns a list of available drivers for a library that are available
      * in an application.
+     * 
+     * @todo support namespaced prefixes with multiple levels
+     *
      *
      * @param string $app     The application name.
      * @param string $prefix  The library prefix.
@@ -2022,7 +2037,21 @@ class Horde_Registry implements Horde_Shutdown_Task
 
                     foreach ($di as $val) {
                         if (!$val->isDir() && !$di->isDot()) {
-                            $class = $app . '_' . $prefix . '_' . basename($val, '.php');
+                            $class = ucfirst($app) . '_' . $prefix . '_' . basename($val, '.php');
+                            if (class_exists($class)) {
+                                $classes[] = $class;
+                            }
+                        }
+                    }
+                } catch (UnexpectedValueException $e) {}
+            }
+            if (is_dir($fileroot . '/src/' . $fileprefix)) {
+                try {
+                    $di = new DirectoryIterator($fileroot . '/src/' . $fileprefix);
+
+                    foreach ($di as $val) {
+                        if (!$val->isDir() && !$di->isDot()) {
+                            $class = 'Horde\\' . ucfirst($app) . '\\' . $prefix . '\\' . basename($val, '.php');
                             if (class_exists($class)) {
                                 $classes[] = $class;
                             }

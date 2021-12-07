@@ -9,10 +9,11 @@
  * @license  http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package  Core
  */
-namespace Horde\Core;
-use \PHPUnit\Framework\TestCase;
-use \Horde_Test_Case as HordeTestCase;
-use \Horde\Core\Config\State;
+
+namespace Horde\Core\Test;
+
+use Horde\Test\TestCase;
+use Horde\Core\Config\State;
 
 /**
  * Tests for Horde\Core\Config\State.
@@ -22,21 +23,21 @@ use \Horde\Core\Config\State;
  * @license  http://www.horde.org/licenses/lgpl21 LGPL 2.1
  * @package  Core
  */
-class ConfigStateTest extends HordeTestCase
+class ConfigStateTest extends TestCase
 {
     public function testFailsWhenNoGlobalsOrParam()
     {
-        if (isset($GLOBALS['conf'])){
+        if (isset($GLOBALS['conf'])) {
             unset($GLOBALS['conf']);
         }
         $this->expectException(\Horde_Exception::class);
-        $state = new State;
+        $state = new State();
         $this->assertEquals([], $state->toArray());
     }
 
     public function testPassedEqualsDump()
     {
-        if (isset($GLOBALS['conf'])){
+        if (isset($GLOBALS['conf'])) {
             unset($GLOBALS['conf']);
         }
         $param = ['foo' => 'bar'];

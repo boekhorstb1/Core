@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Horde\Core\Middleware;
@@ -10,13 +11,15 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Psr\Http\Message\StreamFactoryInterface;
-use \Horde_Registry;
-use \Horde_Application;
+use Horde\Http\Server\RampageRequestHandler;
+use Horde_Registry;
+use Horde_Application;
 use Horde_Controller;
 use Horde_Injector;
 use Horde_Routes_Mapper as Router;
-use \Horde_String;
+use Horde_String;
 use Psr\Http\Message\ResponseFactoryInterface;
+use Horde\Exception\HordeException;
 
 /**
  * AppRouter middleware
@@ -35,7 +38,7 @@ use Psr\Http\Message\ResponseFactoryInterface;
  *
  *
  */
-class AppRouter implements MiddlewareInterface
+class AppRouter extends RampageRequestHandler implements MiddlewareInterface, RequestHandlerInterface
 {
     private Router $router;
     private Horde_Registry $registry;
@@ -50,13 +53,13 @@ class AppRouter implements MiddlewareInterface
 
     /**
      * Route a request for a horde app
-     * 
+     *
      * Depends on the AppFinder running first
      * This middleware really only works with the Rampage Runner
-     * 
-     * @param ServerRequestInterfacd $request
+     *
+     * @param ServerRequestInterface $request
      * @param RequestHandlerInterface $handler
-     * 
+     *
      * @return ResponseInterface
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
@@ -71,7 +74,7 @@ class AppRouter implements MiddlewareInterface
         }
         $defaultStack = [
             AuthHordeSession::class,
-            RedirectToLogin::class
+            RedirectToLogin::class,
         ];
 
         // Check for route definitions.
@@ -94,7 +97,7 @@ class AppRouter implements MiddlewareInterface
         // Load application routes.
         // Cannot rename mapper as long as we support the existing routes definitions
         $mapper = $router = $this->router;
-        $router->environ = array('REQUEST_METHOD' => $request->getMethod());
+        $router->environ = ['REQUEST_METHOD' => $request->getMethod()];
         include $routeFile;
         if (file_exists($fileroot . '/config/routes.local.php')) {
             include $fileroot . '/config/routes.local.php';
@@ -113,7 +116,7 @@ class AppRouter implements MiddlewareInterface
         // Stack is an array of DI keys
         // Empty array means NO more middleware besides controller
         // unset stack means DEFAULT middleware stack
-        $stack = isset($match['stack']) ? $match['stack'] : $defaultStack;
+        $stack = $match['stack'] ?? $defaultStack;
         foreach ($stack as $middleware) {
             $handler->addMiddleware($this->injector->get($middleware));
         }
@@ -121,8 +124,12 @@ class AppRouter implements MiddlewareInterface
         // Controller is a single DI key for either a HandlerInterface, MiddlewareInterface or a Horde_Controller
         $controllerName = $match['controller'] ?? '';
         $traditionalFilename = $fileroot . '/app/controllers/' . $controllerName . '.php';
-        if ($this->injector->hasInstance($controllerName) || class_exists($controllerName)) {
-            $controller = $this->injector->getInstance($controllerName);
+        if ($controllerName) {
+            try {
+                $controller = $this->injector->getInstance($controllerName);
+            } catch (Exception $e) {
+                throw new HordeException('Defined controller but could not create: ' . $controllerName, 0, $e);
+            }
         }
         if (empty($controller)) {
             if (file_exists($traditionalFilename)) {
@@ -137,7 +144,7 @@ class AppRouter implements MiddlewareInterface
         // Handle traditional Horde_Controller
         if ($controller instanceof Horde_Controller) {
             $middleware = new H5Controller(
-                $controller, 
+                $controller,
                 $this->injector->get(ResponseFactoryInterface::class),
                 $this->injector->get(StreamFactoryInterface::class)
             );
@@ -155,4 +162,5 @@ class AppRouter implements MiddlewareInterface
         }
         return $handler->handle($request);
     }
+
 }

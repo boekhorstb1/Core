@@ -1,4 +1,37 @@
 ---
+3.0.0alpha10:
+  api: 3.0.0alpha6
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-12-01
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |+
+    
+3.0.0alpha9:
+  api: 3.0.0alpha6
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-12-01
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    [rla] Add support for namespaced Application, Api, Ajax\Application and Blocks.
+    |+
+3.0.0alpha8:
+  api: 3.0.0alpha6
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-11-29
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |+
 3.0.0alpha7:
   api: 3.0.0alpha6
   state:
@@ -8,8 +41,9 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |+
-    
+  notes: |
+    [rla] Added PSR-3 Logger Factory to the default set.
+    |+
 3.0.0alpha6:
   api: 3.0.0alpha6
   state:
