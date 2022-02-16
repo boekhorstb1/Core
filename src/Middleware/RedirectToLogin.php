@@ -9,6 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use Horde_Variables;
 use Horde_Registry;
 use Horde_Application;
 use Horde_Controller;
@@ -38,10 +39,31 @@ class RedirectToLogin implements MiddlewareInterface
     }
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
+        
         if ($request->getAttribute('HORDE_AUTHENTICATED_USER')) {
             return $handler->handle($request);
         }
-        $redirect = (string)Horde::Url($this->registry->getInitialPage('horde'), true);
+
+        // set baseurl: check if alternative login is set
+        if(isset($GLOBALS['conf']['auth']['alternate_login'])){
+            $baseurl = $GLOBALS['conf']['auth']['alternate_login'];
+        }
+        else{
+            $baseurl = $this->registry->getInitialPage('horde');
+        };
+        
+        // create redirect url: first check if AppFinder found a legitimate app in url
+        $app = $request->getAttribute('app');
+        if (isset($app)) {
+            $opts = ['app' => $app];
+            $host = $request->getUri()->getHost();
+            $scheme = $request->getUri()->getScheme();
+            $redirect = (string)Horde::Url($baseurl, true)->add('url', $scheme."://".$host."/".$app);    
+        }
+        else {
+            $redirect = (string)Horde::Url($baseurl, true);
+        }
+
         return $this->responseFactory->createResponse(302)->withHeader('Location', $redirect);
     }
 }
