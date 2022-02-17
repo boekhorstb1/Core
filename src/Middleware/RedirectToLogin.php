@@ -41,7 +41,6 @@ class RedirectToLogin implements MiddlewareInterface
     }
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        
         if ($request->getAttribute('HORDE_AUTHENTICATED_USER')) {
             return $handler->handle($request);
         }
@@ -58,15 +57,10 @@ class RedirectToLogin implements MiddlewareInterface
         
         // create redirect url
         $app = $request->getAttribute('app');
-        if (isset($app)) {
-            $host = $request->getUri()->getHost();
-            $scheme = $request->getUri()->getScheme();
-            $redirect = (string)Horde::Url($baseurl, true)->add('url', $scheme."://".$host."/".$app);    
-        }
-        else {
-            $redirect = (string)Horde::Url($baseurl, true);
-        }
-
+        $host = $request->getUri()->getHost();
+        $scheme = $request->getUri()->getScheme();
+        $redirect = (string)Horde::Url($baseurl, true)->add('url', $scheme."://".$host."/".$app);    
+        
         return $this->responseFactory->createResponse(302)->withHeader('Location', $redirect);
     }
 }
