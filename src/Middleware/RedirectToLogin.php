@@ -14,6 +14,7 @@ use Horde_Application;
 use Horde_Controller;
 use Horde_Routes_Mapper as Router;
 use Horde_String;
+use Horde\Core\Config\State;
 use Horde;
 use Horde\Core\UserPassport;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -29,12 +30,14 @@ use Psr\Http\Message\ResponseFactoryInterface;
  */
 class RedirectToLogin implements MiddlewareInterface
 {
+    private State $conf;
     private Horde_Registry $registry;
     private ResponseFactoryInterface $responseFactory;
-    public function __construct(Horde_Registry $registry, ResponseFactoryInterface $responseFactory)
+    public function __construct(Horde_Registry $registry, ResponseFactoryInterface $responseFactory, State $conf)
     {
         $this->registry = $registry;
         $this->responseFactory = $responseFactory;
+        $this->conf = $conf;
     }
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
@@ -44,17 +47,18 @@ class RedirectToLogin implements MiddlewareInterface
         }
 
         // set baseurl: check if alternative login is set
-        if(isset($GLOBALS['conf']['auth']['alternate_login'])){
-            $baseurl = $GLOBALS['conf']['auth']['alternate_login'];
+        $configArray = $this->conf->toArray();
+        $alternateLogin = $configArray['auth']['alternate_login'];
+        if(isset($alternateLogin)){
+            $baseurl = $alternateLogin;
         }
         else{
-            $baseurl = $this->registry->getInitialPage('horde');
+            $baseurl = $this->registry->getServiceLink('login');
         };
         
-        // create redirect url: first check if AppFinder found a legitimate app in url
+        // create redirect url
         $app = $request->getAttribute('app');
         if (isset($app)) {
-            $opts = ['app' => $app];
             $host = $request->getUri()->getHost();
             $scheme = $request->getUri()->getScheme();
             $redirect = (string)Horde::Url($baseurl, true)->add('url', $scheme."://".$host."/".$app);    
