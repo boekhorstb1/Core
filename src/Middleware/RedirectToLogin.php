@@ -58,7 +58,6 @@ class RedirectToLogin implements MiddlewareInterface
         else{
             $url = (string) $request->getUri();
             $baseurl = $this->registry->getServiceLink('login');
-            $redirect = (string)$this->registry->getServiceLink('logintasks', 'passwd', true);
             $redirect = (string)Horde::Url($baseurl, true)->add('url', $url);
             $redirect = Horde::signUrl($redirect);
         };
