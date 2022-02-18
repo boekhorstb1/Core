@@ -45,21 +45,20 @@ class RedirectToLogin implements MiddlewareInterface
         if ($request->getAttribute('HORDE_AUTHENTICATED_USER')) {
             return $handler->handle($request);
         }
+        $url = (string)$request->getUri();
+        $url = Horde::signUrl($url);
 
         // set baseurl: check if alternative login is set (currently this part is working)
         $configArray = $this->conf->toArray();
         $alternateLogin = $configArray['auth']['alternate_login'];
         if(!empty($alternateLogin)){
             $baseurl = $alternateLogin;
-            $url = (string)$request->getUri();
             $redirect = (string)Horde::Url($baseurl, true)->add('url', $url);
         }
         // set baseurl: if no alternative login, only Horde (NOT WOKRING: I have not found any solution yet...... I do not know why passwd relink is working)
         else{
-            $url = (string) $request->getUri();
             $baseurl = $this->registry->getServiceLink('login');
             $redirect = (string)Horde::Url($baseurl, true)->add('url', $url);
-            $redirect = Horde::signUrl($redirect);
         };
         
         return $this->responseFactory->createResponse(302)->withHeader('Location', $redirect);
