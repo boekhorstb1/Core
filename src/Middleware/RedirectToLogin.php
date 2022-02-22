@@ -45,22 +45,25 @@ class RedirectToLogin implements MiddlewareInterface
         if ($request->getAttribute('HORDE_AUTHENTICATED_USER')) {
             return $handler->handle($request);
         }
-        $url = (string)$request->getUri();
-        $url = Horde::signUrl($url);
 
-        // set baseurl: check if alternative login is set (currently this part is working)
+        $requestUrl = (string) $request->getUri();
+        $signedRequestUrl = Horde::signUrl($requestUrl);
+
+        // set baseurl: check if alternative login is set and use it as baseurl
         $configArray = $this->conf->toArray();
-        $alternateLogin = $configArray['auth']['alternate_login'];
-        if(!empty($alternateLogin)){
-            $baseurl = $alternateLogin;
-            $redirect = (string)Horde::Url($baseurl, true)->add('url', $url);
+        $configArray['auth']['alternate_login'] ?? null;
+
+        if (!empty($alternateLogin)) {
+            $baseUrl = $alternateLogin;
         }
-        // set baseurl: if no alternative login, only Horde (NOT WOKRING: I have not found any solution yet...... I do not know why passwd relink is working)
-        else{
-            $baseurl = $this->registry->getServiceLink('login');
-            $redirect = (string)Horde::Url($baseurl, true)->add('url', $url);
+
+        // set baseurl: if no alternative login, use Horde login as baseurl
+        else {
+            $baseUrl = $this->registry->getServiceLink('login');
         };
         
-        return $this->responseFactory->createResponse(302)->withHeader('Location', $redirect);
+        $redirectUrl = (string) Horde::Url($baseUrl, true)->add('url', $signedRequestUrl);
+
+        return $this->responseFactory->createResponse(302)->withHeader('Location', $redirectUrl);
     }
 }
