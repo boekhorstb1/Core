@@ -55,10 +55,8 @@ class RedirectToLogin implements MiddlewareInterface
 
         if (!empty($alternateLogin)) {
             $baseUrl = $alternateLogin;
-        }
-
-        // set baseurl: if no alternative login, use Horde login as baseurl
-        else {
+        } else {
+            // set baseurl: if no alternative login, use Horde login as baseurl
             $baseUrl = $this->registry->getServiceLink('login');
         };
         
