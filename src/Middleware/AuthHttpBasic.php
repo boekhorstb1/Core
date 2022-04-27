@@ -70,6 +70,7 @@ class AuthHttpBasic implements MiddlewareInterface
                 return $handler->handle($request);
             }
         }
-        return $handler->handle($request);
+        // this will return afterthe foreach and then send a reqeust without headers, so should be removed right?
+        //return $handler->handle($request);
     }
 }
