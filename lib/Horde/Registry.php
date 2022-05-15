@@ -1738,12 +1738,12 @@ class Horde_Registry implements Horde_Shutdown_Task
      * Check permissions on an application.
      *
      * @param string $app     The name of the application
-     * @param integer $perms  The permission level to check for.
-     * @param array $params   Additional options:
+     * @param int    $perms  The permission level to check for.
+     * @param array  $params   Additional options:
      *   - notransparent: (boolean) Do not attempt transparent authentication.
      *                    DEFAULT: false
      *
-     * @return boolean  Whether access is allowed.
+     * @return bool  Whether access is allowed.
      */
     public function hasPermission($app, $perms = Horde_Perms::READ,
                                   array $params = array())
